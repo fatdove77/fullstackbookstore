@@ -1,0 +1,32 @@
+@import './index.css';
+/* index.css */
+
+// @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@mixin s{
+  background-color: gold;
+}
+
+.home {
+  background-color: pink;
+}
+
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item-center {
+  display: flex;
+  align-items: center;
+}
+
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

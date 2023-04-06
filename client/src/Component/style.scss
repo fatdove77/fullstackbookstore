@@ -1,0 +1,31 @@
+.book{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap:10px;
+  margin-top: 10px;
+  
+  img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    background-color: pink;
+  }
+}
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  input{
+    width:250px;
+    padding:10px;
+    border: 1px solid grey;
+  }
+}
+
+
