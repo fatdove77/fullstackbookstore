@@ -1,5 +1,6 @@
 import React ,{lazy,Suspense}from 'react'
 import './style.scss'
+import { AnimatePresence } from "framer-motion";
 import { useRoutes  } from 'react-router-dom';
 
 const Books  = lazy(
@@ -33,7 +34,7 @@ function Index() {
   return (
     <div className="router flex-center">
       <Suspense fallback={<p>loading</p>}>
-        {element}
+          {element}
       </Suspense>
       
     </div>

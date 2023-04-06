@@ -18,12 +18,12 @@ export const useFetchBooks = ()=>{
   const handleAdd  = useCallback(async(book)=>{
     await addBooks(book);
     await getBooks();
-  })
+  },[books])
   //修改图书
   const handleUpdate = useCallback(async(id,book)=>{
     await updateBook(id,book);
     await getBooks();
-  })
+  },[books])
   useEffect(()=>{
     getBooks()
   },[])
